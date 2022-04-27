@@ -220,7 +220,6 @@ input, label{
     justify-content:center;
     align-items:center;
     margin: 15px;
-    background-image: url(https://images.unsplash.com/photo-1623689048105-a17b1e1936b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=389&q=80);
     background-size: cover;
     
 }
@@ -304,10 +303,7 @@ input, label{
     height: 250px;
     width:auto;
 }
-.footer-content  ul{
 
-
-}
 
 .footer-content  li {
 
