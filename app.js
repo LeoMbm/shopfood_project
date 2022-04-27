@@ -184,4 +184,8 @@ let fooditem=[
 
 ]
 
+for (const item of fooditem) {
 
+    console.log(item)
+    
+}
