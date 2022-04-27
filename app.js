@@ -1,6 +1,6 @@
 let fooditem=[
     {
-        nom :'chicken burgers',
+        name :'Chicken Burgers',
         img :'img/chicen.jpeg',
         note:4.6,
         category:'american',
@@ -10,7 +10,7 @@ let fooditem=[
         prix:'10€',
     },
     {
-        nom :'ultimate bacon king',
+        name :'Ultimate Bacon King',
         img :'img/bacon king.jpeg',
         note:4.3,
         category:'american',
@@ -20,7 +20,7 @@ let fooditem=[
         prix:'10€',
     },
     {
-        nom :'tacos grecque',
+        name :'Tacos Grec',
         img :'img/tacos-a-la-grecque.jpg',
         note:4.4,
         category:'mexican',
@@ -30,7 +30,7 @@ let fooditem=[
         prix:'8€',
     },
     {
-        nom :'suprem tacos',
+        name :'Supreme Tacos',
         img :'img/tacosmex.jpeg',
         note:4.5,
         category:'mexican',
@@ -40,7 +40,7 @@ let fooditem=[
         prix:'12€',
     },
     {
-        nom :'durum piment',
+        name :'Dürum Piment',
         img :'img/durump.jpeg',
         note:4.2,
         category:'turkey',
@@ -50,7 +50,7 @@ let fooditem=[
         prix:'11€',
     },
     {
-        nom :'durum chicken',
+        name :'Dürum Chicken',
         img :'img/dour.jpeg',
         note:4.3,
         category:'turkey',
@@ -60,7 +60,7 @@ let fooditem=[
         prix:'11€',
     },
     {
-        nom :'salade cesar',
+        name :'Salade Cesar',
         img :'img/slac.jpeg',
         note:4.1,
         category:'american',
@@ -70,7 +70,7 @@ let fooditem=[
         prix:'8€',
     },
     {
-        nom :'salade quinoa',
+        name :'Salade Quinoa',
         img :'img/quinoa.jpg',
         note:4.3,
         category:'american',
@@ -81,7 +81,7 @@ let fooditem=[
 
     },
     {
-        nom :'nouilles poulet',
+        name :'Nouilles Poulet',
         img :'img/nouillesp.jpeg',
         note:4.2,
         category:'Chinese',
@@ -91,7 +91,7 @@ let fooditem=[
         prix:'13€',
     },
     {
-        nom :'nouilles beauf',
+        name :'Nouilles Boeuf',
         img :'img/nouillesb.jpeg',
         note:4.8,
         category:'Chinese',
@@ -101,7 +101,7 @@ let fooditem=[
         prix:'11€',
     },
     {
-        nom :'plateau japan roll mixte',
+        name :'Plateau Japan Roll Mix',
         img :'img/rols1.png',
         note:4.2,
         category:'Chinese',
@@ -111,7 +111,7 @@ let fooditem=[
         prix:'20€',
     },
     {
-        nom :'pizza 4 fromages',
+        name :'Pizza 4 Fromages',
         img :'img/pizza4.png',
         note:4.5,
         category:'italy',
@@ -121,7 +121,7 @@ let fooditem=[
         prix:'15€',
     },
     {
-        nom :'pizza calzone',
+        name :'Pizza Calzone',
         img :'img/calzo.jpg',
         note:4.7,
         category:'italy',
@@ -131,7 +131,7 @@ let fooditem=[
         prix:'15€',
     },
     {
-        nom :'pâtes carbonara',
+        name :'Pâtes Carbonara',
         img :'img/pattec.jpeg',
         note:4.8,
         category:'italy',
@@ -141,7 +141,7 @@ let fooditem=[
         prix:'12€',
     },
     {
-        nom :'pâtes bolognaise',
+        name :'Pâtes Bolognaise',
         img :'img/patteb.jpg',
         note:4.7,
         category:'italy',
@@ -152,7 +152,7 @@ let fooditem=[
 
     },
     {
-        nom :'boulette frite',
+        name :'Boulette Frite',
         img :'img/boulet.jpg',
         note:3.9,
         category:'belgian',
@@ -162,7 +162,7 @@ let fooditem=[
         prix:'15€',
     },
     {
-        nom :'calamar à la romaine',
+        name :'Calamar à la Romaine',
         img :'img/calamar.jpg',
         note:4.3,
         category:'spain',
@@ -172,7 +172,7 @@ let fooditem=[
         prix:'10€',
     },
     {
-        nom :'plateau de fruit de mer',
+        name :'Plateau de Fruit de mer',
         img :'img/plateau.jpg',
         note:4.6,
         category:'spain',
@@ -182,7 +182,7 @@ let fooditem=[
         prix:'40€',
     },
     {
-        nom :'ramen chicken',
+        name :'Ramen Chicken',
         img :'img/ramen.jpg',
         note:4.7,
         category:'chinese',
@@ -192,7 +192,7 @@ let fooditem=[
         prix:'12€',
     },
     {
-        nom :'spicy ramen',
+        name :'Spicy Ramen',
         img :'img/ramenp.jpg',
         note:4.5,
         category:'chinese',
@@ -204,8 +204,64 @@ let fooditem=[
 
 ]
 
-for (const item of fooditem) {
 
-    console.log(item)
-    
+
+// SCROLL HORIZONTAL CATEGORY 
+
+let currentScrollPosition = 0;
+let scrollAmount = 320;
+const itemContainer = document.querySelector('.item-container');
+const wrapper = document.querySelector('.wrapper-topCat');
+let maxScroll = itemContainer.offsetWidth + wrapper.offsetWidth;
+
+
+
+function scrollHorizontally(value) {
+    currentScrollPosition += (value * scrollAmount);
+    console.log(currentScrollPosition);
+
+    // PROBLEME A CETTE CONDITION CA NE SCROLL PLUS
+
+    if(currentScrollPosition > 0){
+        currentScrollPosition = 0;
+    }
+ 
+    if(currentScrollPosition < maxScroll){
+        currentScrollPosition = maxScroll;
+    }
+
+    itemContainer.style.left = currentScrollPosition + "px";
+
 }
+
+// DOM DYNAMIC HTML CONTENT
+const sectionCategory = document.querySelector('#category');
+const topCategory = document.querySelector('top-category');
+const categoryContainer = document.querySelector('.category-container');
+const grid = document.querySelector('grid-category');
+
+
+
+function item(){
+
+    for (const item of fooditem) {
+
+        let foodCategory = document.createElement('div');
+        foodCategory.className = 'food-category';
+        let nameCategory = document.createElement('h1');
+        nameCategory.innerHTML = item.name;
+
+
+        categoryContainer.appendChild(grid)
+        grid.appendChild(foodCategory);
+        foodCategory.append(nameCategory);
+
+        console.log(item.name);
+
+
+    }
+}
+
+item();
+
+
