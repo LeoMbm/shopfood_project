@@ -81,8 +81,10 @@ let fooditem=[
 
     },
     {
+
         name :'Nouilles Poulet',
         img :'./img/nouillep.jpeg',
+
         note:4.2,
         category:'Chinese',
         genre:'chicken',
@@ -91,6 +93,7 @@ let fooditem=[
         prix:'13€',
     },
     {
+
         name :'Nouilles Boeuf',
         img :'./img/nouillesb.jpeg',
         note:4.8,
@@ -101,6 +104,7 @@ let fooditem=[
         prix:'11€',
     },
     {
+
         name :'Plateau Japan Roll Mix',
         img :'./img/rols1.png',
         note:4.2,
@@ -111,6 +115,7 @@ let fooditem=[
         prix:'20€',
     },
     {
+
         name :'Pizza 4 Fromages',
         img :'./img/pizza4.jpg',
         note:4.5,
@@ -121,6 +126,7 @@ let fooditem=[
         prix:'15€',
     },
     {
+
         name :'Pizza Calzone',
         img :'./img/calzo.jpg',
         note:4.7,
@@ -131,6 +137,7 @@ let fooditem=[
         prix:'15€',
     },
     {
+
         name :'Pâtes Carbonara',
         img :'./img/pattec.jpeg',
         note:4.8,
@@ -141,6 +148,7 @@ let fooditem=[
         prix:'12€',
     },
     {
+
         name :'Pâtes Bolognaise',
         img :'./img/patteb.jpg',
         note:4.7,
@@ -152,6 +160,7 @@ let fooditem=[
 
     },
     {
+
         name :'Boulette Frite',
         img :'./img/boulet.jpg',
         note:3.9,
@@ -162,6 +171,7 @@ let fooditem=[
         prix:'15€',
     },
     {
+
         name :'Calamar à la Romaine',
         img :'./img/calamar.jpg',
         note:4.3,
@@ -172,6 +182,7 @@ let fooditem=[
         prix:'10€',
     },
     {
+
         name :'Plateau de Fruit de mer',
         img :'./img/plateau.jpg',
         note:4.6,
@@ -182,6 +193,7 @@ let fooditem=[
         prix:'40€',
     },
     {
+
         name :'Ramen Chicken',
         img :'./img/ramen.jpg',
         note:4.7,
@@ -192,6 +204,7 @@ let fooditem=[
         prix:'12€',
     },
     {
+
         name :'Spicy Ramen',
         img :'./img/ramenp.jpg',
         note:4.5,
