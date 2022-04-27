@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Dark Kitchen | Livraison de plats à domicile !</title>
 </head>
 <body>
     <section id="home">
+        <!-- NAV  -->
         <header>
             <nav>
                 <ul>
@@ -17,11 +18,97 @@
                     <li><a href='#'><span id="first">Dark</span><span id="second"> Kitchen</span></a></li>
                     <li><a href='#'><i class="fa-solid fa-cart-shopping"></i></a></li>
                 </ul>
-                
             </nav>
-            
         </header>
+
+
+        <!-- SECTION HOME WITH SEARCH -->
+        <div class="homeContainer">
+            <div class="search-container">
+                <label for="site-search">Votre plat préféré, livrés chez vous<br> en un clic :</label>
+                <input type="search" id="site-search" placeholder="Search some food...">
+                <button type="submit" id="search-button">Chercher</button>
+            </div>
+        </div>
     </section>
+
+<main>
+    <!-- SECTION CATEGORY -->
+    <section id="category">
+        <div class="top-category">
+            <div class="wrapper-topCat">
+                <div class="item">Italien</div>
+                <div class="item">Asiatique</div>
+                <div class="item">Américain</div>
+                <div class="item">Végétarien</div>
+                <div class="item">Indien</div>
+                <div class="item">Latino</div>
+                <div class="item">Africain</div>
+                <div class="item">Sans Gluten</div>
+            </div>
+            </div>
+        </div>
+        <div class="category-container">
+            <div class="grid-category">
+                <div class="food-category italien">
+                    <h1>ITALIEN</h1>
+                </div>
+
+                <div class="food-category american">
+                    <h1>AMERICAIN</h1>
+                </div>
+
+                <div class="food-category asiatique">
+                    <h1>ASIATIQUE</h1>
+                </div>
+
+                <div class="food-category vegan">
+                    <h1>VEGETARIEN</h1>
+                </div>
+
+                <div class="food-category africain">
+                    <h1>AFRICAIN</h1>
+                </div>
+
+                <div class="food-category latino">
+                    <h1>LATINO</h1>
+                </div>
+
+            </div>
+
+        </div>
+
+            
+
+    </section>
+</main>
+    <!-- SECTION FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <img src="./assets/map.png" alt="" srcset="">
+
+            <div class="footer-list">
+                <ul>
+                    <li><a href="#">Obtenir de l'aide</a></li>
+                    <li><a href="#">Ajoutez votre plat</a></li>
+                    <li><a href="#">Devenez coursier-partenaire</a></li>
+                    <li><a href="#">Créez un compte professionel</a></li>
+                    <li><a href="#">Économisez sur votre première<br> commande</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Restaurants à proximité</a></li>
+                    <li><a href="#">Afficher toutes les villes</a></li>
+                    <li><a href="#">Tous les pays</a></li>
+                    <li><a href="#">Commandes à récupérer à proximité</a></li>
+                    <li><a href="#">À propos de Dark Kitchen</a></li>
+                </ul>
+
+            </div>
+            >
+        </div>
+        <hr>
+        
+    </footer>
     
     <script src="https://kit.fontawesome.com/97bceb2613.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./app.js"></script>
