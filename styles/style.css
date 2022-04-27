@@ -230,8 +230,8 @@ input, label{
   footer{
       background: #000;
       width: 100vw;
-      height: 90vh;
-      display: flex;
+      height: 60vh;
+      /* display: flex; */
   }
 
   #footH1{
@@ -242,7 +242,7 @@ input, label{
 .footer-content{
 
     width: 100%;
-    height: 50%;
+    height: 80%;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -251,7 +251,7 @@ input, label{
 
 .footer-content img{
 
-    height: auto;
+    height: 250px;
     width:auto;
 }
 .footer-content  ul{
@@ -263,12 +263,14 @@ input, label{
 
     
     list-style-type: none;
-    line-height: 50px;
+    /* line-height: 50px; */
    
 }
 
-.footer-list{
+hr{
+    border: none;
+    border-top: 1px solid #fff;
+    width: 80%;
+    margin: auto;
 
-    display: block;
-    flex-wrap: wrap;
 }
