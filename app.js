@@ -1,7 +1,7 @@
 let fooditem=[
     {
-        nom :'chicken burgers',
-        img :'img/chicen.jpeg',
+        name :'Chicken Burgers',
+        img :'./img/chicen.jpeg',
         note:4.6,
         category:'american',
         genre:'chicken',
@@ -10,8 +10,8 @@ let fooditem=[
         prix:'10€',
     },
     {
-        nom :'ultimate bacon king',
-        img :'img/bacon king.jpeg',
+        name :'Ultimate Bacon King',
+        img :'./img/bacon king.jpeg',
         note:4.3,
         category:'american',
         genre:'meat',
@@ -20,8 +20,8 @@ let fooditem=[
         prix:'10€',
     },
     {
-        nom :'tacos grecque',
-        img :'img/tacos-a-la-grecque.jpg',
+        name :'Tacos Grec',
+        img :'./img/tacos-a-la-grecque.jpg',
         note:4.4,
         category:'mexican',
         genre:'chicken',
@@ -30,8 +30,8 @@ let fooditem=[
         prix:'8€',
     },
     {
-        nom :'suprem tacos',
-        img :'img/tacosmex.jpeg',
+        name :'Supreme Tacos',
+        img :'./img/tacosmex.jpeg',
         note:4.5,
         category:'mexican',
         genre:'meat',
@@ -40,8 +40,8 @@ let fooditem=[
         prix:'12€',
     },
     {
-        nom :'durum piment',
-        img :'img/durump.jpeg',
+        name :'Dürum Piment',
+        img :'./img/durump.jpeg',
         note:4.2,
         category:'turkey',
         genre:'meat',
@@ -50,8 +50,8 @@ let fooditem=[
         prix:'11€',
     },
     {
-        nom :'durum chicken',
-        img :'img/dour.jpeg',
+        name :'Dürum Chicken',
+        img :'./img/dour.jpeg',
         note:4.3,
         category:'turkey',
         genre:'chicken',
@@ -60,8 +60,8 @@ let fooditem=[
         prix:'11€',
     },
     {
-        nom :'salade cesar',
-        img :'img/slac.jpeg',
+        name :'Salade Cesar',
+        img :'./img/slac.jpeg',
         note:4.1,
         category:'american',
         genre:'salad',
@@ -70,8 +70,8 @@ let fooditem=[
         prix:'8€',
     },
     {
-        nom :'salade quinoa',
-        img :'img/quinoa.jpg',
+        name :'Salade Quinoa',
+        img :'./img/quinoa.jpg',
         note:4.3,
         category:'american',
         genre:'salad',
@@ -81,8 +81,10 @@ let fooditem=[
 
     },
     {
-        nom :'nouilles poulet',
-        img :'img/nouillesp.jpeg',
+
+        name :'Nouilles Poulet',
+        img :'./img/nouillep.jpeg',
+
         note:4.2,
         category:'Chinese',
         genre:'chicken',
@@ -91,8 +93,9 @@ let fooditem=[
         prix:'13€',
     },
     {
-        nom :'nouilles beauf',
-        img :'img/nouillesb.jpeg',
+
+        name :'Nouilles Boeuf',
+        img :'./img/nouillesb.jpeg',
         note:4.8,
         category:'Chinese',
         genre:'meat',
@@ -101,8 +104,9 @@ let fooditem=[
         prix:'11€',
     },
     {
-        nom :'plateau japan roll mixte',
-        img :'img/rols1.png',
+
+        name :'Plateau Japan Roll Mix',
+        img :'./img/rols1.png',
         note:4.2,
         category:'Chinese',
         genre:'meat',
@@ -111,8 +115,9 @@ let fooditem=[
         prix:'20€',
     },
     {
-        nom :'pizza 4 fromages',
-        img :'img/pizza4.png',
+
+        name :'Pizza 4 Fromages',
+        img :'./img/pizza4.jpg',
         note:4.5,
         category:'italy',
         genre:'vegetarian',
@@ -121,8 +126,9 @@ let fooditem=[
         prix:'15€',
     },
     {
-        nom :'pizza calzone',
-        img :'img/calzo.jpg',
+
+        name :'Pizza Calzone',
+        img :'./img/calzo.jpg',
         note:4.7,
         category:'italy',
         genre:'meat',
@@ -131,8 +137,9 @@ let fooditem=[
         prix:'15€',
     },
     {
-        nom :'pâtes carbonara',
-        img :'img/pattec.jpeg',
+
+        name :'Pâtes Carbonara',
+        img :'./img/pattec.jpeg',
         note:4.8,
         category:'italy',
         genre:'meat',
@@ -141,8 +148,9 @@ let fooditem=[
         prix:'12€',
     },
     {
-        nom :'pâtes bolognaise',
-        img :'img/patteb.jpg',
+
+        name :'Pâtes Bolognaise',
+        img :'./img/patteb.jpg',
         note:4.7,
         category:'italy',
         genre:'meat',
@@ -152,8 +160,9 @@ let fooditem=[
 
     },
     {
-        nom :'boulette frite',
-        img :'img/boulet.jpg',
+
+        name :'Boulette Frite',
+        img :'./img/boulet.jpg',
         note:3.9,
         category:'belgian',
         genre:'meat',
@@ -162,8 +171,9 @@ let fooditem=[
         prix:'15€',
     },
     {
-        nom :'calamar à la romaine',
-        img :'img/calamar.jpg',
+
+        name :'Calamar à la Romaine',
+        img :'./img/calamar.jpg',
         note:4.3,
         category:'spain',
         genre:'crustacean',
@@ -172,8 +182,9 @@ let fooditem=[
         prix:'10€',
     },
     {
-        nom :'plateau de fruit de mer',
-        img :'img/plateau.jpg',
+
+        name :'Plateau de Fruit de mer',
+        img :'./img/plateau.jpg',
         note:4.6,
         category:'spain',
         genre:'crustacean',
@@ -182,8 +193,9 @@ let fooditem=[
         prix:'40€',
     },
     {
-        nom :'ramen chicken',
-        img :'img/ramen.jpg',
+
+        name :'Ramen Chicken',
+        img :'./img/ramen.jpg',
         note:4.7,
         category:'chinese',
         genre:'chicken',
@@ -192,8 +204,9 @@ let fooditem=[
         prix:'12€',
     },
     {
-        nom :'spicy ramen',
-        img :'img/ramenp.jpg',
+
+        name :'Spicy Ramen',
+        img :'./img/ramenp.jpg',
         note:4.5,
         category:'chinese',
         genre:'meat',
@@ -203,5 +216,67 @@ let fooditem=[
     },
 
 ]
+
+
+
+// SCROLL HORIZONTAL CATEGORY 
+
+let currentScrollPosition = 0;
+let scrollAmount = 320;
+const itemContainer = document.querySelector('.item-container');
+const wrapper = document.querySelector('.wrapper-topCat');
+let maxScroll = itemContainer.offsetWidth + wrapper.offsetWidth;
+
+
+
+function scrollHorizontally(value) {
+    currentScrollPosition += (value * scrollAmount);
+    console.log(currentScrollPosition);
+
+    // PROBLEME A CETTE CONDITION CA NE SCROLL PLUS
+
+    // if(currentScrollPosition < 0){
+    //     currentScrollPosition = 0;
+    // }
+ 
+    if(currentScrollPosition > maxScroll){
+        currentScrollPosition = maxScroll;
+    }
+
+    itemContainer.style.left = currentScrollPosition + "px";
+
+}
+
+// DOM DYNAMIC HTML CONTENT
+const sectionCategory = document.querySelector('#category');
+const topCategory = document.querySelector('top-category');
+const categoryContainer = document.querySelector('.category-container');
+const grid = document.querySelector('.grid-category');
+
+
+
+function item(){
+
+    for (const item of fooditem) {
+
+        let foodCategory = document.createElement('div');
+        foodCategory.className = 'food-category';
+        let nameCategory = document.createElement('h1');
+        nameCategory.innerHTML = item.name;
+        
+        foodCategory.style.backgroundImage = 'url('+ item.img +')';
+        
+        
+        categoryContainer.appendChild(grid)
+        grid.appendChild(foodCategory);
+        foodCategory.append(nameCategory);
+        
+        console.log(item.img);
+
+
+    }
+}
+
+item();
 
 
