@@ -1,9 +1,17 @@
+/* WHOLE PAGE BEHAVIOR */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
 :root {
-    
+    --Black: hsl(0, 0%, 0%);
+    --Yellow: hsl(51, 100%, 49%);
+    --White: hsl(0, 0%, 100%);
+
+    --font-family-m: 'Montserrat', sans-serif;
+    --font-family-r: 'Roboto', sans-serif;
 }
 
 *{
-
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,84 +21,61 @@ html{
     scroll-behavior: smooth;
 }
 
-body {
-/* background-color: #000; */
-font-family: 'Poppins';
-width: 100vw;
-height: 100vh;
-overflow-x: hidden;
- 
+a{
+    text-decoration: none;
 }
 
+i{
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* PARTIE 1 : HEADER */
+
+/* NAV */
 
 header{
-
     display: flex;
-    justify-content: center;
-    align-items: center;
     margin: auto;
-    padding: 30px 10px;
-    /* background: #000; */
+    padding: 20px 70px;
 }
-
 
 nav{
     width: 100%;
-    height: 100%;
-    margin : auto 60px;
-    
-
 }
 
-svg{
-
-    width: 20px;
-    height: auto;
-
-}
 
 nav ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
-
 
 nav li{
-
     list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    
 }
 
-a{
-    text-decoration: none;
-    color: white;
+nav ul li:first-child {
+    font-size: 32px;
+    color: var(--White);
 }
 
-#first{
-    color: #C4C4C4;
+nav ul li:nth-child(2) {
     font-size: 40px;
+    color: var(--Black);
+    font-weight: bold;
+    margin-left: -100px;
 }
 
-#second{
+/* IL FAUT REPARER LE PANIER POUR AVOIR UNE POSITION FIXED
 
-    color: black;
-    font-size: 40px;
-}
-
-
-i{
-
-    margin-right: 10px;
-    vertical-align: middle;
-}
+nav ul li:last-child{
+    position: fixed;
+} */
 
 
+
+/* LANDING PAGE */
 
 #home{
     min-width: 100vw;
@@ -98,64 +83,49 @@ i{
     background-image: url(../assets/background.png);
     background-size: cover;
     background-position: center;
+}
 
+.search-container {
+    margin-left: 42px;
 }
 
 label{
-    display: block;
-    font-size: 3.6vw;
+    display: flex;
+    font-size: 40px;
     color: white;
-    
-}
-
-input, label{
-    margin: 2.1875rem 0;
+    margin-bottom: 42px;
+    margin-top: 250px;
 }
 
 #site-search{
-
-    width: 732px;
+    width: 731px;
     height: 67px;
     border: 2px solid white;
     background-color:rgba(0, 0, 0, 0);
     color:white;
     outline:none;
-    padding: 20px;
 }
 
 #site-search::placeholder{
-
     color:white;
-    font-size: 20px;
-  
+    font-size: 32px;
+    background-image: url('../assets/Search.svg');
+    background-repeat: no-repeat;
+    font-size: 32px;
 }
 
 #search-button{
-    width:237px;
-    padding: 20px;
+    width:287px;
+    height: 67px;
     border: 2px solid white;
     background-color:rgba(0, 0, 0, 0);
     color:white;
-    outline:none;
-    font-size: 20px;
-    vertical-align: middle;
+    font-size: 32px;
 
 }
 
 
-
-.homeContainer{
-    margin-top: 160px;
-
-    min-width: 100vw;
-    min-height: auto;
-}
-
-.search-container{
-
- margin-left: 20px;
-}
-
+/* Partie 2 : Catégories */
 
 #category{
     min-width: 100vw;
@@ -179,8 +149,11 @@ input, label{
     justify-content:center;
     align-items:center;
     margin: 15px;
-   
 }
+
+
+/* Partie 3 : Plats */
+
 
 .category-container{
 
@@ -227,6 +200,10 @@ input, label{
   }
 
 
+
+  /* Partie 4 : Footer */
+
+
   footer{
       background: #000;
       width: 100vw;
@@ -235,7 +212,6 @@ input, label{
   }
 
   #footH1{
-
     color: #fff;
   }
 
