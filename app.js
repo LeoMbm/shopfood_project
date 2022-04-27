@@ -1,7 +1,7 @@
 let fooditem=[
     {
         name :'Chicken Burgers',
-        img :'img/chicen.jpeg',
+        img :'./img/chicen.jpeg',
         note:4.6,
         category:'american',
         genre:'chicken',
@@ -11,7 +11,7 @@ let fooditem=[
     },
     {
         name :'Ultimate Bacon King',
-        img :'img/bacon king.jpeg',
+        img :'./img/bacon king.jpeg',
         note:4.3,
         category:'american',
         genre:'meat',
@@ -21,7 +21,7 @@ let fooditem=[
     },
     {
         name :'Tacos Grec',
-        img :'img/tacos-a-la-grecque.jpg',
+        img :'./img/tacos-a-la-grecque.jpg',
         note:4.4,
         category:'mexican',
         genre:'chicken',
@@ -31,7 +31,7 @@ let fooditem=[
     },
     {
         name :'Supreme Tacos',
-        img :'img/tacosmex.jpeg',
+        img :'./img/tacosmex.jpeg',
         note:4.5,
         category:'mexican',
         genre:'meat',
@@ -41,7 +41,7 @@ let fooditem=[
     },
     {
         name :'Dürum Piment',
-        img :'img/durump.jpeg',
+        img :'./img/durump.jpeg',
         note:4.2,
         category:'turkey',
         genre:'meat',
@@ -51,7 +51,7 @@ let fooditem=[
     },
     {
         name :'Dürum Chicken',
-        img :'img/dour.jpeg',
+        img :'./img/dour.jpeg',
         note:4.3,
         category:'turkey',
         genre:'chicken',
@@ -61,7 +61,7 @@ let fooditem=[
     },
     {
         name :'Salade Cesar',
-        img :'img/slac.jpeg',
+        img :'./img/slac.jpeg',
         note:4.1,
         category:'american',
         genre:'salad',
@@ -71,7 +71,7 @@ let fooditem=[
     },
     {
         name :'Salade Quinoa',
-        img :'img/quinoa.jpg',
+        img :'./img/quinoa.jpg',
         note:4.3,
         category:'american',
         genre:'salad',
@@ -82,7 +82,7 @@ let fooditem=[
     },
     {
         name :'Nouilles Poulet',
-        img :'img/nouillesp.jpeg',
+        img :'./img/nouillep.jpeg',
         note:4.2,
         category:'Chinese',
         genre:'chicken',
@@ -92,7 +92,7 @@ let fooditem=[
     },
     {
         name :'Nouilles Boeuf',
-        img :'img/nouillesb.jpeg',
+        img :'./img/nouillesb.jpeg',
         note:4.8,
         category:'Chinese',
         genre:'meat',
@@ -102,7 +102,7 @@ let fooditem=[
     },
     {
         name :'Plateau Japan Roll Mix',
-        img :'img/rols1.png',
+        img :'./img/rols1.png',
         note:4.2,
         category:'Chinese',
         genre:'meat',
@@ -112,7 +112,7 @@ let fooditem=[
     },
     {
         name :'Pizza 4 Fromages',
-        img :'img/pizza4.png',
+        img :'./img/pizza4.jpg',
         note:4.5,
         category:'italy',
         genre:'vegetarian',
@@ -122,7 +122,7 @@ let fooditem=[
     },
     {
         name :'Pizza Calzone',
-        img :'img/calzo.jpg',
+        img :'./img/calzo.jpg',
         note:4.7,
         category:'italy',
         genre:'meat',
@@ -132,7 +132,7 @@ let fooditem=[
     },
     {
         name :'Pâtes Carbonara',
-        img :'img/pattec.jpeg',
+        img :'./img/pattec.jpeg',
         note:4.8,
         category:'italy',
         genre:'meat',
@@ -142,7 +142,7 @@ let fooditem=[
     },
     {
         name :'Pâtes Bolognaise',
-        img :'img/patteb.jpg',
+        img :'./img/patteb.jpg',
         note:4.7,
         category:'italy',
         genre:'meat',
@@ -153,7 +153,7 @@ let fooditem=[
     },
     {
         name :'Boulette Frite',
-        img :'img/boulet.jpg',
+        img :'./img/boulet.jpg',
         note:3.9,
         category:'belgian',
         genre:'meat',
@@ -163,7 +163,7 @@ let fooditem=[
     },
     {
         name :'Calamar à la Romaine',
-        img :'img/calamar.jpg',
+        img :'./img/calamar.jpg',
         note:4.3,
         category:'spain',
         genre:'crustacean',
@@ -173,7 +173,7 @@ let fooditem=[
     },
     {
         name :'Plateau de Fruit de mer',
-        img :'img/plateau.jpg',
+        img :'./img/plateau.jpg',
         note:4.6,
         category:'spain',
         genre:'crustacean',
@@ -183,7 +183,7 @@ let fooditem=[
     },
     {
         name :'Ramen Chicken',
-        img :'img/ramen.jpg',
+        img :'./img/ramen.jpg',
         note:4.7,
         category:'chinese',
         genre:'chicken',
@@ -193,7 +193,7 @@ let fooditem=[
     },
     {
         name :'Spicy Ramen',
-        img :'img/ramenp.jpg',
+        img :'./img/ramenp.jpg',
         note:4.5,
         category:'chinese',
         genre:'meat',
@@ -222,11 +222,11 @@ function scrollHorizontally(value) {
 
     // PROBLEME A CETTE CONDITION CA NE SCROLL PLUS
 
-    if(currentScrollPosition > 0){
-        currentScrollPosition = 0;
-    }
+    // if(currentScrollPosition < 0){
+    //     currentScrollPosition = 0;
+    // }
  
-    if(currentScrollPosition < maxScroll){
+    if(currentScrollPosition > maxScroll){
         currentScrollPosition = maxScroll;
     }
 
@@ -238,7 +238,7 @@ function scrollHorizontally(value) {
 const sectionCategory = document.querySelector('#category');
 const topCategory = document.querySelector('top-category');
 const categoryContainer = document.querySelector('.category-container');
-const grid = document.querySelector('grid-category');
+const grid = document.querySelector('.grid-category');
 
 
 
@@ -250,13 +250,15 @@ function item(){
         foodCategory.className = 'food-category';
         let nameCategory = document.createElement('h1');
         nameCategory.innerHTML = item.name;
-
-
+        
+        foodCategory.style.backgroundImage = 'url('+ item.img +')';
+        
+        
         categoryContainer.appendChild(grid)
         grid.appendChild(foodCategory);
         foodCategory.append(nameCategory);
-
-        console.log(item.name);
+        
+        console.log(item.img);
 
 
     }
