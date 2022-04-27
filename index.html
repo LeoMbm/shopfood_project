@@ -37,43 +37,27 @@
     <section id="category">
         <div class="top-category">
             <div class="wrapper-topCat">
-                <div class="item">Italien</div>
-                <div class="item">Asiatique</div>
-                <div class="item">Américain</div>
-                <div class="item">Végétarien</div>
-                <div class="item">Indien</div>
-                <div class="item">Latino</div>
-                <div class="item">Africain</div>
-                <div class="item">Sans Gluten</div>
-            </div>
+
+                <button class="btn-scroll" id="btn-scroll-left" onclick="scrollHorizontally(1)"><i class="fa-solid fa-angle-left"></i></button>
+                <button class="btn-scroll" id="btn-scroll-right"onclick="scrollHorizontally(-1)"><i class="fa-solid fa-angle-right"></i></button>
+               
+                <div class="item-container">
+                    <div class="item"><a href="#">Italien</a></div>
+                    <div class="item"><a href="#">Asiatique</a></div>
+                    <div class="item"><a href="#">Américain</a></div>
+                    <div class="item"><a href="#">Végétarien</a></div>
+                    <div class="item"><a href="#">Indien</a></div>
+                    <div class="item"><a href="#">Latino</a></div>
+                    <div class="item"><a href="#">Africain</a></div>
+                    <div class="item"><a href="#">Sans Gluten</a></div>
+
+                </div>
             </div>
         </div>
+
         <div class="category-container">
             <div class="grid-category">
-                <div class="food-category italien">
-                    <h1>ITALIEN</h1>
-                </div>
-
-                <div class="food-category american">
-                    <h1>AMERICAIN</h1>
-                </div>
-
-                <div class="food-category asiatique">
-                    <h1>ASIATIQUE</h1>
-                </div>
-
-                <div class="food-category vegan">
-                    <h1>VEGETARIEN</h1>
-                </div>
-
-                <div class="food-category africain">
-                    <h1>AFRICAIN</h1>
-                </div>
-
-                <div class="food-category latino">
-                    <h1>LATINO</h1>
-                </div>
-
+                
             </div>
 
         </div>
@@ -83,7 +67,7 @@
     </section>
 </main>
     <!-- SECTION FOOTER -->
-    <footer>
+<footer>
         <div class="footer-content">
             <img src="./assets/map.png" alt="" srcset="">
 
@@ -108,7 +92,7 @@
         </div>
         <hr>
         
-    </footer>
+</footer>
     
     <script src="https://kit.fontawesome.com/97bceb2613.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./app.js"></script>
