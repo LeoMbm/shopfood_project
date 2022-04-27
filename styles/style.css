@@ -55,6 +55,8 @@ nav li{
     list-style-type: none;
 }
 
+
+/* Alligner le logo avec "Cantersteen" */
 nav ul li:first-child {
     font-size: 32px;
     color: var(--White);
@@ -104,13 +106,12 @@ label{
     background-color:rgba(0, 0, 0, 0);
     color:white;
     outline:none;
+    font-size: 32px;
+    padding-left: 20px
 }
 
 #site-search::placeholder{
     color:white;
-    font-size: 32px;
-    background-image: url('../assets/Search.svg');
-    background-repeat: no-repeat;
     font-size: 32px;
 }
 
