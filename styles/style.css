@@ -42,11 +42,43 @@ h2 {
 /* PARTIE 1 : HEADER */
 
 /* NAV */
+body {
+    font-family: 'Poppins';
+    width: 100%;
+    min-height: 100vh;
+    /* width: calc(100vw -15px); */
+    /* overflow-x: hidden; */
+    /* background-color: #000; */
+ 
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+   
+    
+}
+::-webkit-scrollbar-track{
+
+    background: transparent;
+}
+
+
+::-webkit-scrollbar-thumb{
+    
+    background: #c2c2c2;
+    padding: 20px;
+    border-radius: 15px;
+    
+}
+
 
 header{
     display: flex;
     margin: auto;
     padding: 20px 70px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
 nav{
@@ -83,6 +115,45 @@ nav ul li:nth-child(2) {
 nav ul li:last-child{
     position: fixed;
 } */
+    height: 100%;
+    margin : auto 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.location{
+
+    width: 30%;
+    border: 1px solid blue;
+    display: flex;
+}
+
+.cart{
+    
+    width: 30%;
+    border: 1px solid blue;
+}
+
+.cart-icon{
+
+    text-align: right;
+}
+
+
+
+nav i, nav p{
+    text-decoration: none;
+    color: white;
+}
+
+
+.logo{
+    color: #000000;
+    font-size: 18px;
+}
 
 
 
@@ -90,6 +161,7 @@ nav ul li:last-child{
 
 #home{
     width: 100%;
+    /* min-width: 100vw; */
     min-height: 100vh;
     background-image: url(../assets/background.png);
     background-size: cover;
@@ -139,6 +211,23 @@ label{
 
 #category{
     width: 100%;
+}
+
+.homeContainer{
+    margin-top: 160px;
+
+    /* min-width: 100vw; */
+    min-height: auto;
+}
+
+.search-container{
+
+ margin-left: 20px;
+}
+
+
+#category{
+    /* min-width: 100vw; */
     min-height: 100vh;
     margin-bottom: 40px;
 }
@@ -206,14 +295,14 @@ label{
     margin: 15px;
     background-image: url(https://images.unsplash.com/photo-1623689048105-a17b1e1936b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=389&q=80);
     background-size: cover;
+    color: #000;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Poppins';
     
 }
 
-.item a{
-    color: #000;
-    font-size: 20px;
-   
-}
+
 
 
 /* Partie 3 : Plats */
@@ -223,45 +312,48 @@ label{
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    width: 90vw;
+    margin: auto;
+
 }
 .grid-category {  
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-auto-rows: 1fr;
-    gap: 50px 120px;
-    grid-auto-flow: column dense;
-    justify-content: start;
-    align-content: space-between;
-    justify-items: start;
-    align-items: start;
-    grid-template-areas:
-      "viande american"
-      "asiatique vegan"
-      "africain latino";
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    grid-auto-rows: 150px;
+    width: 100%;
       /* background: #000; */
   }
   
   .food-category {
 
-    width: 350px;
-    height: 250px;
+    width: 100%;
+    height: 100%;
     border: 2px solid #000;
-    /* background-image: url(https://images.unsplash.com/photo-1569718212165-3a8278d5f624?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center
     
   }
 
-  .food-category img{
+  .name-overlay{
 
+    color: white;
+    z-index: 1;
+  }
+
+  .food-category:hover{
+     
+      transform: scale(1.2);
+      filter: brightness(20%);
+     
     
-    width: 600px;
-    height: 100%;
+      
   }
 
 
@@ -275,6 +367,9 @@ label{
       height: 560px;
       color: var(--White);
       padding: 16px 35px 11px 35px;
+      /* width: 100vw; */
+      height: 60vh;
+      /* display: flex; */
   }
 
   footer h1{
