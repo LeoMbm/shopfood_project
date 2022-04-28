@@ -51,6 +51,10 @@ header{
 
 nav{
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
 }
 
 
@@ -157,7 +161,7 @@ label{
 
 .wrapper-topCat{
     width: 95%;
-    height: 150px;
+    height: 100%;
     background: #FFF;
     border: none;
     border-radius:10px;
@@ -267,7 +271,7 @@ label{
   footer {
       background: #000;
       width: 100%;
-      height: 560px;
+      height: 100%;
       color: var(--White);
       padding: 16px 35px 11px 35px;
   }
@@ -320,8 +324,6 @@ hr{
     border-top: 1px solid white;
     margin-left: -8px;
     margin: 42px -8px 15px -8px;
-<<<<<<< HEAD
-=======
 }
 
 .under-footer {
@@ -351,7 +353,6 @@ hr{
 .socials img {
     margin-left: 30px;
     vertical-align: middle;
->>>>>>> d54d5505282c6781880b36f8be6779d17e096a72
 }
 
 .under-footer {

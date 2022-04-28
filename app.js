@@ -253,6 +253,10 @@ let nationalityFood=[
     }
 ]
 
+
+
+
+
 // SCROLL HORIZONTAL CATEGORY 
 
 let currentScrollPosition = 0;
@@ -309,7 +313,7 @@ function item(){
 
     for (const item of fooditem) {
         
-        
+    
         
 
         let foodCategory = document.createElement('article');
