@@ -320,6 +320,38 @@ hr{
     border-top: 1px solid white;
     margin-left: -8px;
     margin: 42px -8px 15px -8px;
+<<<<<<< HEAD
+=======
+}
+
+.under-footer {
+    font-size: 14px;
+    height: 71px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.thirdul {
+    list-style: none;
+    margin-bottom: 16px;
+    line-height: 23px;
+}
+
+.thirdul li {
+    margin-right: 16px;
+    list-style: none;
+    display: inline;
+}
+
+.socials {
+    margin-right: 80px
+}
+
+.socials img {
+    margin-left: 30px;
+    vertical-align: middle;
+>>>>>>> d54d5505282c6781880b36f8be6779d17e096a72
 }
 
 .under-footer {
