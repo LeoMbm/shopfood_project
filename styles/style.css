@@ -17,11 +17,6 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: var(--White);
-    width: 100%;
-}
-
 html{
     scroll-behavior: smooth;
 }
@@ -33,10 +28,6 @@ a{
 i{
     margin-right: 10px;
     vertical-align: middle;
-}
-
-h2 {
-    margin-left: 20px;
 }
 
 /* PARTIE 1 : HEADER */
@@ -83,18 +74,18 @@ header{
 
 nav{
     width: 100%;
-}
-
-
-nav ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+
+/* nav ul{
+}
+
 nav li{
     list-style-type: none;
-}
+} */
 
 
 /* Alligner le logo avec "Cantersteen" */
@@ -114,7 +105,7 @@ nav ul li:nth-child(2) {
 
 nav ul li:last-child{
     position: fixed;
-} */
+} 
     height: 100%;
     margin : auto 60px;
     display: flex;
@@ -122,7 +113,7 @@ nav ul li:last-child{
     align-items: center;
     
 
-}
+}*/
 
 .location{
 
@@ -160,8 +151,7 @@ nav i, nav p{
 /* LANDING PAGE */
 
 #home{
-    width: 100%;
-    /* min-width: 100vw; */
+    min-width: 100vw;
     min-height: 100vh;
     background-image: url(../assets/background.png);
     background-size: cover;
@@ -210,42 +200,21 @@ label{
 /* Partie 2 : Catégories */
 
 #category{
-    width: 100%;
-}
-
-.homeContainer{
-    margin-top: 160px;
-
-    /* min-width: 100vw; */
-    min-height: auto;
-}
-
-.search-container{
-
- margin-left: 20px;
-}
-
-
-#category{
-    /* min-width: 100vw; */
+    min-width: 100vw;
     min-height: 100vh;
     margin-bottom: 40px;
 }
 
 .top-category{
     display: flex;
-    flex-direction: column;
     justify-content:center;
+    align-items:center;
     background: #F8F8F8;
     height: 30vh;
 }
 
-.top-category h2 {
-    
-}
-
 .wrapper-topCat{
-    width: 95%;
+    width: 90%;
     height: 150px;
     background: #FFF;
     border: none;
@@ -363,7 +332,7 @@ label{
 
   footer {
       background: #000;
-      width: 100%;
+      width: 100vw;
       height: 560px;
       color: var(--White);
       padding: 16px 35px 11px 35px;
@@ -385,11 +354,11 @@ label{
       color: var(--White) 
   }
 
-.footer-content {
+/* .footer-content {
 }
 
 .footer-content  ul{
-}
+} */
 
 .footer-list {
     display: flex;
