@@ -1,175 +1,144 @@
+/* WHOLE PAGE BEHAVIOR */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
 :root {
-    
+    --Black: hsl(0, 0%, 0%);
+    --Yellow: hsl(51, 100%, 49%);
+    --White: hsl(0, 0%, 100%);
+
+    --font-family-m: 'Montserrat', sans-serif;
+    --font-family-r: 'Roboto', sans-serif;
 }
 
 *{
-
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: var(--White);
+    width: 100%;
 }
 
 html{
     scroll-behavior: smooth;
 }
 
-body {
-    font-family: 'Poppins';
-    width: 100%;
-    min-height: 100vh;
-    /* width: calc(100vw -15px); */
-    /* overflow-x: hidden; */
-    /* background-color: #000; */
- 
-}
-
-::-webkit-scrollbar{
-    width: 15px;
-   
-    
-}
-::-webkit-scrollbar-track{
-
-    background: transparent;
-}
-
-
-::-webkit-scrollbar-thumb{
-    
-    background: #c2c2c2;
-    padding: 20px;
-    border-radius: 15px;
-    
-}
-
-
-header{
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
-
-nav{
-    width: 100%;
-    height: 100%;
-    margin : auto 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-
-}
-
-.location{
-
-    width: 30%;
-    border: 1px solid blue;
-    display: flex;
-}
-
-.cart{
-    
-    width: 30%;
-    border: 1px solid blue;
-}
-
-.cart-icon{
-
-    text-align: right;
-}
-
-
-
-nav i, nav p{
+a{
     text-decoration: none;
-    color: white;
 }
 
-
-.logo{
-    color: #000000;
-    font-size: 18px;
-}
-
-
-#home i{
-
+nav i{
     margin-right: 10px;
     vertical-align: middle;
 }
 
+h2 {
+    margin-left: 20px;
+}
 
+/* PARTIE 1 : HEADER */
+
+/* NAV */
+
+header{
+    display: flex;
+    margin: auto;
+    padding: 20px 70px;
+}
+
+nav{
+    width: 100%;
+}
+
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li{
+    list-style-type: none;
+}
+
+
+/* Alligner le logo avec "Cantersteen" */
+nav ul li:first-child {
+    font-size: 32px;
+    color: var(--White);
+}
+
+nav ul li:nth-child(2) {
+    font-size: 40px;
+    color: var(--Black);
+    font-weight: bold;
+    margin-left: -100px;
+}
+
+/* IL FAUT REPARER LE PANIER POUR AVOIR UNE POSITION FIXED
+
+nav ul li:last-child{
+    position: fixed;
+} */
+
+
+
+/* LANDING PAGE */
 
 #home{
-    /* min-width: 100vw; */
+    width: 100%;
     min-height: 100vh;
     background-image: url(../assets/background.png);
     background-size: cover;
     background-position: center;
+}
 
+.search-container {
+    margin-left: 42px;
 }
 
 label{
-    display: block;
-    font-size: 3.6vw;
+    display: flex;
+    font-size: 40px;
     color: white;
-    
-}
-
-input, label{
-    margin: 2.1875rem 0;
+    margin-bottom: 42px;
+    margin-top: 250px;
 }
 
 #site-search{
-
-    width: 732px;
+    width: 731px;
     height: 67px;
     border: 2px solid white;
     background-color:rgba(0, 0, 0, 0);
     color:white;
     outline:none;
-    padding: 20px;
+    font-size: 32px;
+    padding-left: 20px
 }
 
 #site-search::placeholder{
-
     color:white;
-    font-size: 20px;
-  
+    font-size: 32px;
 }
 
 #search-button{
-    width:237px;
-    padding: 20px;
+    width:287px;
+    height: 67px;
     border: 2px solid white;
     background-color:rgba(0, 0, 0, 0);
     color:white;
-    outline:none;
-    font-size: 20px;
-    vertical-align: middle;
+    font-size: 32px;
 
 }
 
 
-
-.homeContainer{
-    margin-top: 160px;
-
-    /* min-width: 100vw; */
-    min-height: auto;
-}
-
-.search-container{
-
- margin-left: 20px;
-}
-
+/* Partie 2 : Catégories */
 
 #category{
-    /* min-width: 100vw; */
+    width: 100%;
     min-height: 100vh;
     margin-bottom: 40px;
 }
@@ -177,13 +146,17 @@ input, label{
 .top-category{
     display: flex;
     justify-content:center;
-    align-items:center;
+    align-items: center;
     background: #F8F8F8;
     height: 30vh;
 }
 
+.top-category h2 {
+    
+}
+
 .wrapper-topCat{
-    width: 90%;
+    width: 95%;
     height: 150px;
     background: #FFF;
     border: none;
@@ -233,108 +206,147 @@ input, label{
     margin: 15px;
     background-image: url(https://images.unsplash.com/photo-1623689048105-a17b1e1936b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=389&q=80);
     background-size: cover;
-    color: #000;
-    font-size: 20px;
-    cursor: pointer;
-    font-family: 'Poppins';
     
 }
 
+.item a{
+    color: #000;
+    font-size: 20px;
+   
+}
+
+
+/* Partie 3 : Plats */
 
 
 .category-container{
 
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 90vw;
     margin: auto;
-
 }
 .grid-category {  
 
+    
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 15px;
-    grid-auto-rows: 150px;
-    width: 100%;
-      /* background: #000; */
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 15px;
+        grid-auto-rows: 150px;
+        width: 100%;
   }
   
   .food-category {
 
     width: 100%;
-    height: 100%;
     border: 2px solid #000;
+    /* background-image: url(https://images.unsplash.com/photo-1569718212165-3a8278d5f624?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    transition: all 0.5s ease-in-out;
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    
     
   }
 
-  .name-overlay{
+  .food-category img{
 
-    color: white;
-    z-index: 1;
-  }
-
-  .food-category:hover{
-     
-      transform: scale(1.2);
-      filter: brightness(20%);
-     
     
-      
+    width: 600px;
+    height: 100%;
   }
 
 
-  footer{
+
+  /* Partie 4 : Footer */
+
+
+  footer {
       background: #000;
-      /* width: 100vw; */
-      height: 60vh;
-      /* display: flex; */
+      width: 100%;
+      height: 560px;
+      color: var(--White);
+      padding: 16px 35px 11px 35px;
   }
 
-  #footH1{
-
-    color: #fff;
+  footer h1{
+      font-size: 40px;
+      margin-bottom: 36px;
   }
 
-.footer-content{
+  footer {
+      font-size: 24px;
+  }
 
-    width: 100%;
-    height: 80%;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    
+  footer a {
+      color: var(--White);
+
+  }
+
+  footer a:visited {
+      color: var(--White) 
+  }
+
+.footer-content {
 }
 
-.footer-content img{
-
-    height: 250px;
-    width:auto;
-}
 .footer-content  ul{
-
-
 }
 
-.footer-content  li {
+.footer-list {
+    display: flex;
+    flex-direction: row;
+}
 
-    
+.footer-list li {
     list-style-type: none;
-    /* line-height: 50px; */
-   
+    line-height: 50px;
+}
+
+.firstul {
+    margin-left: 50px;
+}
+
+.secondul {
+    margin-left: 80px;
 }
 
 hr{
     border: none;
-    border-top: 1px solid #fff;
-    width: 80%;
-    margin: auto;
+    margin-top: 42px;
+    border-top: 1px solid white;
+    margin-left: -8px;
+    margin: 42px -8px 15px -8px;
+}
 
+.under-footer {
+    font-size: 14px;
+    height: 71px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.thirdul {
+    list-style: none;
+    margin-bottom: 16px;
+    line-height: 23px;
+}
+
+.thirdul li {
+    margin-right: 16px;
+    list-style: none;
+    display: inline;
+}
+
+.socials {
+    margin-right: 80px
+}
+
+.socials img {
+    margin-left: 30px;
+    vertical-align: middle;
 }
