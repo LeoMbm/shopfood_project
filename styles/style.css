@@ -152,7 +152,6 @@ label{
     justify-content:center;
     align-items: center;
     background: #F8F8F8;
-    height: 30vh;
 }
 
 .top-category h2 {
@@ -224,7 +223,6 @@ label{
 
 
 .category-container{
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -232,35 +230,32 @@ label{
     margin: auto;
 }
 .grid-category {  
-
-    
     display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 15px;
-        grid-auto-rows: 150px;
-        width: 100%;
+    grid-template-columns: repeat(2, 0fr);
+    grid-gap: 15px;
   }
   
   .food-category {
-
-    width: 100%;
+    width: 700px;
+    height: 350px;
     border: 2px solid #000;
-    /* background-image: url(https://images.unsplash.com/photo-1569718212165-3a8278d5f624?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
-    justify-content: center;
-    align-items: center;
     
     
   }
 
   .food-category img{
+    width: 700px;
+    height: 300px;
+  }
 
-    
-    width: 600px;
-    height: 100%;
+  .name-overlay {
+      font-size: 20px;
+      margin-top: 311px;
+      background-color: #FFF;
   }
 
 
@@ -400,14 +395,14 @@ hr{
         height: 22px;
         border: 2px solid black;
         background-color:rgba(0, 0, 0, 0);
-        color:white;
+        color:black;
         outline:none;
         font-size: 12px;
         padding-left: 5px
     }
     
     #site-search-responsive::placeholder{
-        color:white;
+        color: black;
         font-size: 12px;
     }
 
@@ -418,7 +413,7 @@ hr{
     }
     
     
-    /* Partie 2 : Catégories */
+    /* Partie 5 : RESPONSIVE CATEGORIES */
     
     #category{
         width: 100%;
@@ -499,7 +494,7 @@ hr{
     }
     
     
-    /* Partie 3 : Plats */
+    /* Partie 6 : RESPONSIVE PLATES */
     
     
     .category-container{
@@ -544,7 +539,7 @@ hr{
     
     
     
-      /* Partie 4 : Footer */
+      /* Partie 7 : RESPONSIVE FOOTER */
     
     
       footer {
@@ -552,16 +547,20 @@ hr{
           width: 100%;
           height: 100%;
           color: var(--White);
-          padding: 0px;
+          padding: 15px 10px 9px 11px;
           margin: 0px;
+          font-size: 10px;
+          :arg
       }
     
       footer h1{
           font-size: 20px;
+          margin-bottom: 16px;
       }
     
       footer {
-          font-size: 10px;
+          
+
       }
 
       footer iframe {
@@ -584,14 +583,15 @@ hr{
     .footer-content  ul{
     }
     
-    .footer-list {
+    .footer-list ul {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        margin-left: 16px;
     }
     
     .footer-list li {
         list-style-type: none;
-        line-height: 10px;
+        line-height: 15px;
     }
     
     .firstul {
@@ -603,12 +603,14 @@ hr{
     hr{
         border: none;
         border-top: 1px solid white;
+        margin-top: 16px;
     }
     
     .under-footer {
         font-size: 7px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
+        margin-bottom: 0px;
     }
     
     .thirdul {
@@ -622,9 +624,13 @@ hr{
     }
     
     .socials {
+        display: flex;
+        flex-direction: row;
     }
     
     .socials img {
         vertical-align: middle;
+        height: 9px;
+        width: 9px;
     }
 }
