@@ -1,178 +1,162 @@
+/* WHOLE PAGE BEHAVIOR */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
 :root {
-    
+    --Black: hsl(0, 0%, 0%);
+    --Yellow: hsl(51, 100%, 49%);
+    --White: hsl(0, 0%, 100%);
+
+    --font-family-m: 'Montserrat', sans-serif;
+    --font-family-r: 'Roboto', sans-serif;
 }
 
 *{
-
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: var(--White);
+    width: 100%;
 }
 
 html{
     scroll-behavior: smooth;
 }
 
-body {
-/* background-color: #000; */
-font-family: 'Poppins';
-min-width: 100vw;
-min-height: 100vh;
-overflow-x: hidden;
- 
+a{
+    text-decoration: none;
 }
 
+i{
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+h2 {
+    margin-left: 20px;
+}
+
+/* PARTIE 1 : HEADER */
+
+/* NAV */
 
 header{
-    
     display: flex;
-    justify-content: center;
-    align-items: center;
     margin: auto;
-    padding: 30px 10px;
-    /* background: #000; */
+    padding: 20px 70px;
 }
-
 
 nav{
-    min-width: 100vw;
-    height: 100%;
-    margin : auto 60px;
-    
-
+    width: 100%;
 }
 
-svg{
-
-    width: 20px;
-    height: auto;
-
-}
 
 nav ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
-
 
 nav li{
-
     list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    
 }
 
-a{
-    text-decoration: none;
-    color: white;
+
+/* Alligner le logo avec "Cantersteen" */
+nav ul li:first-child {
+    font-size: 32px;
+    color: var(--White);
 }
 
-#first{
-    color: #C4C4C4;
+nav ul li:nth-child(2) {
     font-size: 40px;
+    color: var(--Black);
+    font-weight: bold;
+    margin-left: -100px;
 }
 
-#second{
+/* IL FAUT REPARER LE PANIER POUR AVOIR UNE POSITION FIXED
 
-    color: black;
-    font-size: 40px;
-}
-
-
-#home i{
-
-    margin-right: 10px;
-    vertical-align: middle;
-}
+nav ul li:last-child{
+    position: fixed;
+} */
 
 
+
+/* LANDING PAGE */
 
 #home{
-    min-width: 100vw;
+    width: 100%;
     min-height: 100vh;
     background-image: url(../assets/background.png);
     background-size: cover;
     background-position: center;
+}
 
+.search-container {
+    margin-left: 42px;
 }
 
 label{
-    display: block;
-    font-size: 3.6vw;
+    display: flex;
+    font-size: 40px;
     color: white;
-    
-}
-
-input, label{
-    margin: 2.1875rem 0;
+    margin-bottom: 42px;
+    margin-top: 250px;
 }
 
 #site-search{
-
-    width: 732px;
+    width: 731px;
     height: 67px;
     border: 2px solid white;
     background-color:rgba(0, 0, 0, 0);
     color:white;
     outline:none;
-    padding: 20px;
+    font-size: 32px;
+    padding-left: 20px
 }
 
 #site-search::placeholder{
-
     color:white;
-    font-size: 20px;
-  
+    font-size: 32px;
 }
 
 #search-button{
-    width:237px;
-    padding: 20px;
+    width:287px;
+    height: 67px;
     border: 2px solid white;
     background-color:rgba(0, 0, 0, 0);
     color:white;
-    outline:none;
-    font-size: 20px;
-    vertical-align: middle;
+    font-size: 32px;
 
 }
 
 
-
-.homeContainer{
-    margin-top: 160px;
-
-    min-width: 100vw;
-    min-height: auto;
-}
-
-.search-container{
-
- margin-left: 20px;
-}
-
+/* Partie 2 : Catégories */
 
 #category{
-    min-width: 100vw;
+    width: 100%;
     min-height: 100vh;
     margin-bottom: 40px;
 }
 
 .top-category{
     display: flex;
+    flex-direction: column;
     justify-content:center;
-    align-items:center;
     background: #F8F8F8;
     height: 30vh;
 }
 
+.top-category h2 {
+    
+}
+
 .wrapper-topCat{
-    width: 90%;
+    width: 95%;
     height: 150px;
     background: #FFF;
     border: none;
@@ -231,6 +215,10 @@ input, label{
    
 }
 
+
+/* Partie 3 : Plats */
+
+
 .category-container{
 
     display: flex;
@@ -277,50 +265,88 @@ input, label{
   }
 
 
-  footer{
+
+  /* Partie 4 : Footer */
+
+
+  footer {
       background: #000;
-      width: 100vw;
-      height: 60vh;
-      /* display: flex; */
+      width: 100%;
+      height: 560px;
+      color: var(--White);
+      padding: 16px 35px 11px 35px;
   }
 
-  #footH1{
-
-    color: #fff;
+  footer h1{
+      font-size: 40px;
+      margin-bottom: 36px;
   }
 
-.footer-content{
+  footer {
+      font-size: 24px;
+  }
 
-    width: 100%;
-    height: 80%;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    
+  footer a:visited {
+      color: var(--White) 
+  }
+
+.footer-content {
 }
 
-.footer-content img{
-
-    height: 250px;
-    width:auto;
-}
 .footer-content  ul{
-
-
 }
 
-.footer-content  li {
+.footer-list {
+    display: flex;
+    flex-direction: row;
+}
 
-    
+.footer-list li {
     list-style-type: none;
-    /* line-height: 50px; */
-   
+    line-height: 50px;
+}
+
+.firstul {
+    margin-left: 50px;
+}
+
+.secondul {
+    margin-left: 80px;
 }
 
 hr{
     border: none;
-    border-top: 1px solid #fff;
-    width: 80%;
-    margin: auto;
+    margin-top: 42px;
+    border-top: 1px solid white;
+    margin-left: -8px;
+    margin: 42px -8px 15px -8px;
+}
 
+.under-footer {
+    font-size: 14px;
+    height: 71px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.thirdul {
+    list-style: none;
+    margin-bottom: 16px;
+    line-height: 23px;
+}
+
+.thirdul li {
+    margin-right: 16px;
+    list-style: none;
+    display: inline;
+}
+
+.socials {
+    margin-right: 80px
+}
+
+.socials img {
+    margin-left: 30px;
+    vertical-align: middle;
 }
