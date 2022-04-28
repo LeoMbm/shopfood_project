@@ -17,6 +17,11 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: var(--White);
+    width: 100%;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -28,6 +33,10 @@ a{
 i{
     margin-right: 10px;
     vertical-align: middle;
+}
+
+h2 {
+    margin-left: 20px;
 }
 
 /* PARTIE 1 : HEADER */
@@ -80,7 +89,7 @@ nav ul li:last-child{
 /* LANDING PAGE */
 
 #home{
-    min-width: 100vw;
+    width: 100%;
     min-height: 100vh;
     background-image: url(../assets/background.png);
     background-size: cover;
@@ -129,21 +138,25 @@ label{
 /* Partie 2 : Catégories */
 
 #category{
-    min-width: 100vw;
+    width: 100%;
     min-height: 100vh;
     margin-bottom: 40px;
 }
 
 .top-category{
     display: flex;
+    flex-direction: column;
     justify-content:center;
-    align-items:center;
     background: #F8F8F8;
     height: 30vh;
 }
 
+.top-category h2 {
+    
+}
+
 .wrapper-topCat{
-    width: 90%;
+    width: 95%;
     height: 150px;
     background: #FFF;
     border: none;
@@ -258,7 +271,7 @@ label{
 
   footer {
       background: #000;
-      width: 100vw;
+      width: 100%;
       height: 560px;
       color: var(--White);
       padding: 16px 35px 11px 35px;

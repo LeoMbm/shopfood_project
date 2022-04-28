@@ -247,6 +247,8 @@ function scrollHorizontally(value) {
 
 }
 
+
+
 // DOM DYNAMIC HTML CONTENT
 const sectionCategory = document.querySelector('#category');
 const topCategory = document.querySelector('top-category');
