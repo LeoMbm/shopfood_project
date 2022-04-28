@@ -246,7 +246,7 @@ let maxScroll = itemContainer.offsetWidth + wrapper.offsetWidth;
 
 function scrollHorizontally(value) {
     currentScrollPosition += (value * scrollAmount);
-    console.log(currentScrollPosition);
+    console.log(maxScroll);
 
     // PROBLEME A CETTE CONDITION CA NE SCROLL PLUS
 

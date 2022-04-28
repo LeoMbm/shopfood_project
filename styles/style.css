@@ -14,12 +14,32 @@ html{
 }
 
 body {
-/* background-color: #000; */
-font-family: 'Poppins';
-min-width: 100vw;
-min-height: 100vh;
-overflow-x: hidden;
+    font-family: 'Poppins';
+    width: 100%;
+    min-height: 100vh;
+    /* width: calc(100vw -15px); */
+    /* overflow-x: hidden; */
+    /* background-color: #000; */
  
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+   
+    
+}
+::-webkit-scrollbar-track{
+
+    background: transparent;
+}
+
+
+::-webkit-scrollbar-thumb{
+    
+    background: #c2c2c2;
+    padding: 20px;
+    border-radius: 15px;
+    
 }
 
 
@@ -28,55 +48,50 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
-    padding: 30px 10px;
-    /* background: #000; */
+    padding: 20px;
 }
 
 
 nav{
-    min-width: 90vw;
+    width: 100%;
     height: 100%;
     margin : auto 60px;
-    
-
-}
-
-
-nav ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
     
+
 }
 
+.location{
 
-nav li{
-
-    list-style-type: none;
+    width: 30%;
+    border: 1px solid blue;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    
 }
 
-a{
+.cart{
+    
+    width: 30%;
+    border: 1px solid blue;
+}
+
+.cart-icon{
+
+    text-align: right;
+}
+
+
+
+nav i, nav p{
     text-decoration: none;
     color: white;
 }
 
 
-
-#first{
-    color: #C4C4C4;
-    font-size: 40px;
-}
-
-#second{
-
-    color: black;
-    font-size: 40px;
+.logo{
+    color: #000000;
+    font-size: 18px;
 }
 
 
@@ -89,7 +104,7 @@ a{
 
 
 #home{
-    min-width: 100vw;
+    /* min-width: 100vw; */
     min-height: 100vh;
     background-image: url(../assets/background.png);
     background-size: cover;
@@ -143,7 +158,7 @@ input, label{
 .homeContainer{
     margin-top: 160px;
 
-    min-width: 100vw;
+    /* min-width: 100vw; */
     min-height: auto;
 }
 
@@ -154,7 +169,7 @@ input, label{
 
 
 #category{
-    min-width: 100vw;
+    /* min-width: 100vw; */
     min-height: 100vh;
     margin-bottom: 40px;
 }
@@ -254,6 +269,9 @@ input, label{
     background-size: cover;
     background-position: center;
     transition: all 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center
     
   }
 
@@ -265,7 +283,7 @@ input, label{
 
   .food-category:hover{
      
-      transform: scale(1.5);
+      transform: scale(1.2);
       filter: brightness(20%);
      
     
@@ -275,7 +293,7 @@ input, label{
 
   footer{
       background: #000;
-      width: 100vw;
+      /* width: 100vw; */
       height: 60vh;
       /* display: flex; */
   }
