@@ -82,6 +82,26 @@ nav ul li:nth-child(2) {
     margin-left: -100px;
 }
 
+.cart{
+    width: 20%;
+    height: 100%;
+    /* border: 1px solid black; */
+    display:block;
+    
+}
+
+.cart-icon{
+
+    text-align: right;
+}
+
+.overlay-cart{
+
+  background-color: #fff;
+  width: 100%;
+  height: 3em;
+}
+
 /* IL FAUT REPARER LE PANIER POUR AVOIR UNE POSITION FIXED
 
 nav ul li:last-child{
@@ -252,9 +272,12 @@ label{
     display: flex;
     justify-content: center;
     align-items: center;
+   
     
     
   }
+
+
 
   .food-category img{
 

@@ -12,7 +12,7 @@ let fooditem=[
     {
         name :'Ultimate Bacon King',
         img :'./img/bacon king.jpeg',
-        note:4.3,
+        note :4.3,
         category: 'Américain',
         genre:'meat',
         ingredients:'minced steak, lots of bacon, cheese, special sauce',
