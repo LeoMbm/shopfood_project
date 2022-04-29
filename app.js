@@ -1,3 +1,10 @@
+// LOADER
+
+// const loader = document.querySelector('.loader');
+// window.addEventListener('load', () => {
+//     loader.classList.add('fondu-out');
+// })
+
 let fooditem=[
     {
         name :'Chicken Burgers',
@@ -207,6 +214,7 @@ let nationalityFood=[
         category: 'Asiatique'
     },
 
+
     {
 
         category: 'Belge'
@@ -228,6 +236,7 @@ let nationalityFood=[
     },
 
     {
+
 
         category: 'Turc'
     }
@@ -286,9 +295,6 @@ category();
 function item(){
 
     for (const item of fooditem) {
-        
-        
-        
 
         let foodCategory = document.createElement('article');
         foodCategory.className = 'food-category';
@@ -296,17 +302,6 @@ function item(){
         nameOverlay.className ='name-overlay';
         nameOverlay.innerHTML = item.name;
         foodCategory.style.backgroundImage = 'url('+ item.img +')';
-
-     
-
-
-
-
-
-
-
-
-
 
         
         categoryContainer.appendChild(grid)
