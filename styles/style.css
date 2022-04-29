@@ -349,6 +349,11 @@ hr{
     vertical-align: middle;
 }
 
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
+
 
 /* RESPONSIVE (IPHONE 11 PRO / X) */
 
@@ -419,7 +424,6 @@ hr{
     .top-title {
         margin-top: 15px;
         margin-left: 20px;
-        ma
         font-size: 12px;
     }
 
