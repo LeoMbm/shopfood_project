@@ -253,6 +253,7 @@ let nationalityFood=[
     }
 ]
 
+let shoppingCart = [];
 
 
 
@@ -347,3 +348,24 @@ function item(){
 
 item();
 
+function filterCategory(value){
+    
+    btnItem.forEach((button) => {
+
+
+
+        if(value.toUpperCase() == button.innerText.toUpperCase()){
+
+            button.classList.add('active')
+        }
+    })
+
+
+    let element = document.querySelectorAll('.food-category')
+}
+
+
+
+window.onload = () => {
+    filterCategory('Latino')
+}
