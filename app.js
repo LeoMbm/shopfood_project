@@ -19,7 +19,7 @@ function darkMode() {
         genre:'chicken',
         ingredients:'poulet, tomate, oignon, salade, avocat',
         preparationtime:'10-15 min',
-        prix:'10€',
+        prix:10,
     },
     {
         name :'Ultimate Bacon King',
@@ -29,7 +29,7 @@ function darkMode() {
         genre:'meat',
         ingredients:'minced steak, lots of bacon, cheese, special sauce',
         preparationtime:'10-15 min',
-        prix:'10€',
+        prix:10,
     },
     {
         name :'Tacos Grec',
@@ -39,7 +39,7 @@ function darkMode() {
         genre:'chicken',
         ingredients:'ground pork, salad, olive, onion, pita sauce',
         preparationtime:'10 min',
-        prix:'8€',
+        prix:8,
     },
     {
         name :'Supreme Tacos',
@@ -49,7 +49,7 @@ function darkMode() {
         genre:'meat',
         ingredients:'chopped beef, tomato, avocado, pepper, lemon worms, onion',
         preparationtime:'15 min',
-        prix:'12€',
+        prix:12,
     },
     {
         name :'Dürum Piment',
@@ -59,7 +59,7 @@ function darkMode() {
         genre:'meat',
         ingredients:'veal, turkey, cumin, chilli, tomatoes, onion, chives',
         preparationtime:'15 min',
-        prix:'11€',
+        prix:11,
     },
     {
         name :'Dürum Chicken',
@@ -69,7 +69,7 @@ function darkMode() {
         genre:'chicken',
         ingredients:'chicken, onion, pepper, garlic, tomato, parsley',
         preparationtime:'10 min',
-        prix:'11€',
+        prix:11,
     },
     {
         name :'Salade Cesar',
@@ -79,7 +79,7 @@ function darkMode() {
         genre:'salad',
         ingredients:'lettuce, chicken, bread, cream, anchovies, parmesan, caper, garlic',
         preparationtime:'10 min',
-        prix:'8€',
+        prix:8,
     },
     {
         name :'Salade Quinoa',
@@ -89,7 +89,7 @@ function darkMode() {
         genre:'salad',
         ingredients:'quinoa, bell pepper, red cabbage, carrots, peanut butter, ginger',
         preparationtime:'10 min',
-        prix:'13€',
+        prix: 13,
 
     },
     {
@@ -101,7 +101,7 @@ function darkMode() {
         genre:'chicken',
         ingredients:'chicken, broccoli, carrots, onion, garlic, soy sauce',
         preparationtime:'10-15 min',
-        prix:'13€',
+        prix:13,
     },
     {
 
@@ -112,7 +112,7 @@ function darkMode() {
         genre:'meat',
         ingredients:'beef, beans, ginger, soy sauce, Chinese cabbage',
         preparationtime:'10-15 min',
-        prix:'11€',
+        prix:11,
     },
     {
 
@@ -123,7 +123,7 @@ function darkMode() {
         genre:'meat',
         ingredients:'nori sheets, sesame, rice, wasabi, avocado, cucumber, crab, soy sauce',
         preparationtime:'15 min',
-        prix:'20€',
+        prix:20,
     },
     {
 
@@ -134,7 +134,7 @@ function darkMode() {
         genre:'vegetarian',
         ingredients:'tomato, cheddar, county, blue cheese, mozzarella, basil',
         preparationtime:'20 min',
-        prix:'15€',
+        prix:15,
     },
     {
 
@@ -145,7 +145,7 @@ function darkMode() {
         genre:'meat',
         ingredients:'tomato, gruyère, oregano, ham, shallot, mozzarella, olive',
         preparationtime:'20 min',
-        prix:'15€',
+        prix:15,
     },
     {
 
@@ -156,7 +156,7 @@ function darkMode() {
         genre:'meat',
         ingredients:'cream, onion, bacon, egg, cheese',
         preparationtime:'15 min',
-        prix:'12€',
+        prix:12,
     },
     {
 
@@ -167,7 +167,7 @@ function darkMode() {
         genre:'meat',
         ingredients:'tomato, onion, carrot, celery, parsley, ground beef',
         preparationtime:'15 min',
-        prix:'14€',
+        prix:14,
 
     },
     {
@@ -179,7 +179,7 @@ function darkMode() {
         genre:'meat',
         ingredients:'minced beef, onion, parsley, eggs, cork syrup, tomato, fried',
         preparationtime:'15 min',
-        prix:'15€',
+        prix:15,
     },
     {
 
@@ -190,7 +190,7 @@ function darkMode() {
         genre:'crustacean',
         ingredients:'squid, egg, lemon, onion,',
         preparationtime:'10 min',
-        prix:'10€',
+        prix:10,
     },
     {
 
@@ -201,7 +201,7 @@ function darkMode() {
         genre:'crustacean',
         ingredients:'winkles, whelks, clams, oysters, cakes, crabs, shrimp',
         preparationtime:'25 min',
-        prix:'40€',
+        prix:40,
     },
     {
 
@@ -212,7 +212,7 @@ function darkMode() {
         genre:'chicken',
         ingredients:'chicken, with, sesame, onion, soy, chicken broth',
         preparationtime:'10-15min',
-        prix:'12€',
+        prix:12,
     },
     {
 
@@ -223,7 +223,7 @@ function darkMode() {
         genre:'meat',
         ingredients:'beef, soy, onion, shiitake, miso, sesame, garlic, chilli, vegetable broth',
         preparationtime:'10-15 min',
-        prix:'14€',
+        prix:14,
     },
 
 ]
@@ -275,9 +275,6 @@ const itemContainer = document.querySelector('.item-container');
 const wrapper = document.querySelector('.wrapper-topCat');
 let maxScroll = itemContainer.offsetWidth + wrapper.offsetWidth;
 
-
-
-
 function scrollHorizontally(value) {
     currentScrollPosition += (value * scrollAmount);
     console.log(maxScroll);
@@ -328,7 +325,6 @@ function item(){
         nameOverlay.innerHTML = item.name;
         foodCategory.style.backgroundImage = 'url('+ item.img +')';
 
-        
         categoryContainer.appendChild(grid)
         grid.appendChild(foodCategory);
    
@@ -340,28 +336,6 @@ function item(){
 }
 
 item();
-
-function sortnote() {
-    fooditem.sort( function(a, b) {
-        if (a.note > b.note) {
-            return 1;
-        } else if (a.note < b.note) {
-            return -1;
-        } else return 0
-    }
-    )
-}
-
-function sortname() {
-    fooditem.sort( function(a, b) {
-        if (a.name > b.name) {
-            return 1;
-        } else if (a.name < b.name) {
-            return -1;
-        } else return 0
-    }
-    )
-}
 
 function sortName() {
   let list, i, switching, b, shouldSwitch;
@@ -395,30 +369,45 @@ function sortName() {
   }
 }
 
-function sortNote() {
-    let list, i, switching, b, shouldSwitch;
-    list = document.getElementById("dishes");
-    switching = true;
-    /* Make a loop that will continue until
-    no switching has been done: */
-    while (switching) {
-      // Start by saying: no switching is done:
-      switching = false;
-      b = list.getElementsByTagName("article");
-      console.log(b)
-      // Loop through all list items:
-      for (i = 0; i < fooditem; i++) {
-        // Start by saying there should be no switching:
-        shouldSwitch = false;
-        /* Check if the next item should
-        switch place with the current item: */
-        sortnote()
-      }
-      if (shouldSwitch) {
-        /* If a switch has been marked, make the switch
-        and mark the switch as done: */
-        b[i].parentNode.insertBefore(b[i + 1], b[i]);
-        switching = true;
-      }
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
     }
   }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}

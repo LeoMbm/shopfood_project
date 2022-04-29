@@ -97,7 +97,14 @@
             </div>
         </div>
         <button onclick="sortName()">Sort by name</button>
-        <button onclick="sortNote()">Sort by note</button>
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" onclick="filterSelection('cars')"> Américain</button>
+            <button class="btn" onclick="filterSelection('animals')"> Asiatique</button>
+            <button class="btn" onclick="filterSelection('fruits')"> Turc</button>
+            <button class="btn" onclick="filterSelection('colors')"> Italien</button>
+            <button class="btn" onclick="filterSelection('colors')"> Belge</button>
+          </div>
         <div class="category-container">
             <div class="grid-category" id="dishes">
             </div>
