@@ -272,6 +272,22 @@ let shoppingCart = [];
 
 
 
+// SHOPPING 
+
+
+// let product = document.querySelectorAll('.food-category');
+
+
+// product.addEventListener('click', function (e) => {
+
+
+
+
+// })
+
+
+
+
 // SCROLL HORIZONTAL CATEGORY 
 
 let currentScrollPosition = 0;
@@ -400,30 +416,47 @@ function sortName() {
   }
 }
 
-function sortNote() {
-    let list, i, switching, b, shouldSwitch;
-    list = document.getElementById("dishes");
-    switching = true;
-    /* Make a loop that will continue until
-    no switching has been done: */
-    while (switching) {
-      // Start by saying: no switching is done:
-      switching = false;
-      b = list.getElementsByTagName("article");
-      console.log(b)
-      // Loop through all list items:
-      for (i = 0; i < fooditem; i++) {
-        // Start by saying there should be no switching:
-        shouldSwitch = false;
-        /* Check if the next item should
-        switch place with the current item: */
-        sortnote()
-      }
-      if (shouldSwitch) {
-        /* If a switch has been marked, make the switch
-        and mark the switch as done: */
-        b[i].parentNode.insertBefore(b[i + 1], b[i]);
-        switching = true;
-      }
-    }
-  }
+// function sortNote() {
+//     let list, i, switching, b, shouldSwitch;
+//     list = document.getElementById("dishes");
+//     switching = true;
+//     /* Make a loop that will continue until
+//     no switching has been done: */
+//     while (switching) {
+//       // Start by saying: no switching is done:
+//       switching = false;
+//       b = list.getElementsByTagName("article");
+//       console.log(b)
+//       // Loop through all list items:
+//       for (i = 0; i < fooditem.note ; i++) {
+//         // Start by saying there should be no switching:
+//         shouldSwitch = false;
+//         /* Check if the next item should
+//         switch place with the current item: */
+//         sortnote()
+//       }
+//       if (shouldSwitch) {
+//         /* If a switch has been marked, make the switch
+//         and mark the switch as done: */
+//         fooditem.sort((a, b) => a.note - b.note);
+//         switching = true;
+//       }
+//     }
+//   }
+
+
+//   let noteBtn = document.getElementById('note')
+
+
+//   noteBtn.addEventListener('click', () => {
+
+//         fooditem.sort((a, b) => a.note - b.note);
+//         let list = document.getElementById("dishes");
+//         let d =  list.getElementsByTagName("article");
+
+//         d.append(list);
+       
+
+//         console.log(fooditem);
+
+//   })
