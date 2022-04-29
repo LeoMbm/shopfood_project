@@ -1,4 +1,16 @@
-let fooditem=[
+// LOADER
+
+// const loader = document.querySelector('.loader');
+// window.addEventListener('load', () => {
+//     loader.classList.add('fondu-out');
+// })
+
+function darkMode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+  }
+
+  let fooditem=[
     {
         name :'Chicken Burgers',
         img :'./img/chicen.jpeg',
@@ -12,7 +24,7 @@ let fooditem=[
     {
         name :'Ultimate Bacon King',
         img :'./img/bacon king.jpeg',
-        note :4.3,
+        note:4.3,
         category: 'Américain',
         genre:'meat',
         ingredients:'minced steak, lots of bacon, cheese, special sauce',
@@ -227,6 +239,7 @@ let nationalityFood=[
         category: 'Asiatique'
     },
 
+
     {
 
         category: 'Belge'
@@ -248,6 +261,7 @@ let nationalityFood=[
     },
 
     {
+
 
         category: 'Turc'
     }
@@ -287,8 +301,6 @@ function scrollHorizontally(value) {
 
 }
 
-
-
 // DOM DYNAMIC HTML CONTENT
 const sectionCategory = document.querySelector('#category');
 const topCategory = document.querySelector('top-category');
@@ -299,7 +311,7 @@ const grid = document.querySelector('.grid-category');
 function category(){
     
     for (const food of nationalityFood) {
-        
+
         let btnItem = document.createElement('button')
         btnItem.className = 'item';
         btnItem.innerHTML = food.category
@@ -313,9 +325,6 @@ category();
 function item(){
 
     for (const item of fooditem) {
-        
-    
-        
 
         let foodCategory = document.createElement('article');
         foodCategory.className = 'food-category';
@@ -323,17 +332,6 @@ function item(){
         nameOverlay.className ='name-overlay';
         nameOverlay.innerHTML = item.name;
         foodCategory.style.backgroundImage = 'url('+ item.img +')';
-
-     
-
-
-
-
-
-
-
-
-
 
         
         categoryContainer.appendChild(grid)
@@ -348,24 +346,84 @@ function item(){
 
 item();
 
-function filterCategory(value){
-    
-    btnItem.forEach((button) => {
-
-
-
-        if(value.toUpperCase() == button.innerText.toUpperCase()){
-
-            button.classList.add('active')
-        }
-    })
-
-
-    let element = document.querySelectorAll('.food-category')
+function sortnote() {
+    fooditem.sort( function(a, b) {
+        if (a.note > b.note) {
+            return 1;
+        } else if (a.note < b.note) {
+            return -1;
+        } else return 0
+    }
+    )
 }
 
-
-
-window.onload = () => {
-    filterCategory('Latino')
+function sortname() {
+    fooditem.sort( function(a, b) {
+        if (a.name > b.name) {
+            return 1;
+        } else if (a.name < b.name) {
+            return -1;
+        } else return 0
+    }
+    )
 }
+
+function sortName() {
+  let list, i, switching, b, shouldSwitch;
+  list = document.getElementById("dishes");
+  switching = true;
+  /* Make a loop that will continue until
+  no switching has been done: */
+  while (switching) {
+    // Start by saying: no switching is done:
+    switching = false;
+    b = list.getElementsByTagName("article");
+    // Loop through all list items:
+    for (i = 0; i < (b.length - 1); i++) {
+      // Start by saying there should be no switching:
+      shouldSwitch = false;
+      /* Check if the next item should
+      switch place with the current item: */
+      if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+        /* If next item is alphabetically lower than current item,
+        mark as a switch and break the loop: */
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark the switch as done: */
+      b[i].parentNode.insertBefore(b[i + 1], b[i]);
+      switching = true;
+    }
+  }
+}
+
+function sortNote() {
+    let list, i, switching, b, shouldSwitch;
+    list = document.getElementById("dishes");
+    switching = true;
+    /* Make a loop that will continue until
+    no switching has been done: */
+    while (switching) {
+      // Start by saying: no switching is done:
+      switching = false;
+      b = list.getElementsByTagName("article");
+      console.log(b)
+      // Loop through all list items:
+      for (i = 0; i < fooditem; i++) {
+        // Start by saying there should be no switching:
+        shouldSwitch = false;
+        /* Check if the next item should
+        switch place with the current item: */
+        sortnote()
+      }
+      if (shouldSwitch) {
+        /* If a switch has been marked, make the switch
+        and mark the switch as done: */
+        b[i].parentNode.insertBefore(b[i + 1], b[i]);
+        switching = true;
+      }
+    }
+  }
