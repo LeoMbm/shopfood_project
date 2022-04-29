@@ -239,6 +239,7 @@ let nationalityFood=[
         category: 'Asiatique'
     },
 
+
     {
 
         category: 'Belge'
@@ -260,6 +261,7 @@ let nationalityFood=[
     },
 
     {
+
 
         category: 'Turc'
     }
@@ -318,12 +320,14 @@ category();
 function item(){
 
     for (const item of fooditem) {
+
         let foodCategory = document.createElement('article');
         foodCategory.className = 'food-category';
         let nameOverlay = document.createElement('h1');
         nameOverlay.className ='name-overlay';
         nameOverlay.innerHTML = item.name;
         foodCategory.style.backgroundImage = 'url('+ item.img +')';
+
         
         categoryContainer.appendChild(grid)
         grid.appendChild(foodCategory);
