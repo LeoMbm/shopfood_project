@@ -141,6 +141,10 @@ label{
 
 /* Partie 2 : Catégories */
 
+.top-title {
+    margin-top: 30px;
+}
+
 #category{
     width: 100%;
     min-height: 100vh;
@@ -151,7 +155,6 @@ label{
     display: flex;
     justify-content:center;
     align-items: center;
-    background: #F8F8F8;
 }
 
 .top-category h2 {
@@ -160,16 +163,11 @@ label{
 
 .wrapper-topCat{
     width: 95%;
-    height: 150px;
-    background: #FFF;
-    border: none;
-    border-radius:10px;
+    height: 200px;
     display: flex;
-    flex-direction: row;
     justify-content:space-between;
     align-items:center;
     position: relative;
-    overflow: hidden;
 }
 
 
@@ -177,13 +175,10 @@ label{
 .wrapper-topCat .btn-scroll {
     width : 35px;
     height : 35px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(82, 82, 82);
-    box-shadow: 0 0 5px #999;
-    padding: 5px 8px;
-    border: 1px solid rgb(82, 82, 82);
+    background-color: transparent;
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 50%;
-    margin: 0 5px;
+    margin: 0px 10px;
     z-index: 1;
     cursor: pointer;
 }
@@ -195,13 +190,12 @@ label{
     justify-content: flex-start;
     align-items: center;
     position: absolute;
-    left: 0;
     transition:  0.5s all ease-out;
 }
 
 .item{
-    width: 200px;
-    height: 100px;
+    width: 323px;
+    height: 160px;
     border: 1px solid #000;
     display: flex;
     justify-content:center;
@@ -220,6 +214,10 @@ label{
 
 
 /* Partie 3 : Plats */
+
+.meat-title {
+    margin-bottom: 30px;
+}
 
 
 .category-container{
@@ -353,7 +351,7 @@ hr{
 
 /* RESPONSIVE (IPHONE 11 PRO / X) */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 375px) {
 
     body {
         background-color: var(--White);
@@ -383,19 +381,21 @@ hr{
 
     .localisation-responsive {
         display: flex;
+        margin-left: 15px;
+        
     }
 
     .search-responsive {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 10px;
     }
     
     #site-search-responsive{
         width: 291px;
         height: 22px;
         border: 2px solid black;
-        background-color:rgba(0, 0, 0, 0);
-        color:black;
         outline:none;
         font-size: 12px;
         padding-left: 5px
@@ -414,11 +414,22 @@ hr{
     
     
     /* Partie 5 : RESPONSIVE CATEGORIES */
+
+    .top-title {
+        margin-top: 15px;
+        margin-left: 20px;
+        ma
+        font-size: 12px;
+    }
+
+    .meat-title {
+        margin-left: 20px;
+        font-size: 12px;
+    }
     
     #category{
         width: 100%;
-        min-height: 100vh;
-        margin-bottom: 40px;
+        margin-bottom: 200px;
     }
     
     .top-category{
@@ -426,11 +437,9 @@ hr{
         justify-content:center;
         align-items: center;
         background: #F8F8F8;
-        height: 30vh;
     }
     
     .top-category h2 {
-        
     }
     
     .wrapper-topCat{
@@ -498,7 +507,6 @@ hr{
     
     
     .category-container{
-    
         display: flex;
         justify-content: center;
         align-items: center;
@@ -506,35 +514,25 @@ hr{
         margin: auto;
     }
     .grid-category {  
+        display: flex;
+        flex-direction: column;
+    }
     
-        
-        display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-gap: 15px;
-            grid-auto-rows: 150px;
-            width: 100%;
-      }
-      
       .food-category {
-    
-        width: 100%;
+        width: 345px;
+        height: 158px;
         border: 2px solid #000;
-        /* background-image: url(https://images.unsplash.com/photo-1569718212165-3a8278d5f624?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80); */
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
         display: flex;
         justify-content: center;
         align-items: center;
-        
-        
+      }
+
+      .food-category h1 {
+          z-index: 1;
       }
     
-      .food-category img{
-    
-        
-        width: 600px;
-        height: 100%;
+      .food-category img{ 
+          z-index: 0;
       }
     
     
@@ -550,7 +548,6 @@ hr{
           padding: 15px 10px 9px 11px;
           margin: 0px;
           font-size: 10px;
-          :arg
       }
     
       footer h1{
