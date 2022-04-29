@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./styles/style.css">
     <title>Dark Kitchen | Livraison de plats à domicile !</title>
@@ -28,14 +28,31 @@
         <!-- NAV  -->
         <header>
             <nav>
-                <ul>
-                    <li><i class="fa-solid fa-location-arrow"></i> Cantersteen 10</li>
-                    <li><h1>Dark Kitchen</h1></li>
-                    <li><img src="./assets/Cart.svg" alt=""></li>
-                </ul>
+                <div class="location">
+                    <div class="location-icon"></div><p><i class="fa-solid fa-location-arrow"></i>Canterstaan</p>
+                        <div class="overlay-location">
+
+                        </div>
+                </div>
+
+                <div class="logo"><h1>Dark Kitchen</h1></div>
+
+
+                <div class="cart">
+                    <div class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                    <div class="overlay-cart">
+
+                    </div>
+                </div>
+                <!-- <ul>
+                    <li><a href='#'><i class="fa-solid fa-location-arrow"></i>Canterstaan</a></li>
+                    <li><a href='#'><span id="first">Dark</span><span id="second"> Kitchen</span></a></li>
+                    <li><a href='#'><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul> -->
             </nav>
         </header>
-
+    
+        
 
         <!-- SECTION HOME WITH SEARCH -->
         <div class="homeContainer">
@@ -75,7 +92,7 @@
                 <button class="btn-scroll" id="btn-scroll-right"onclick="scrollHorizontally(-1)"><i class="fa-solid fa-angle-right"></i></button>
                
                 <div class="item-container">
-                
+
                 </div>
             </div>
         </div>
@@ -85,6 +102,7 @@
         </div>
         <div class="category-container">
             <div class="grid-category">
+                
             </div>
 
         </div>
