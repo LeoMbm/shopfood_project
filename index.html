@@ -31,7 +31,6 @@
                 <div class="location">
                     <div class="location-icon"></div><p><i class="fa-solid fa-location-arrow"></i>Canterstaan</p>
                         <div class="overlay-location">
-
                         </div>
                 </div>
 
@@ -96,13 +95,10 @@
                 </div>
             </div>
         </div>
-
-        <div class="meat-title">
-            <h2>Viande</h2>
-        </div>
+        <button onclick="sortName()">Sort by name</button>
+        <!-- <button id='note'>Sort by note</button> -->
         <div class="category-container">
-            <div class="grid-category">
-                
+            <div class="grid-category" id="dishes">
             </div>
 
         </div>
@@ -112,7 +108,7 @@
     </section>
 </main>
     <!-- SECTION FOOTER -->
-<footer>
+    <footer>
         <div class="footer-content">
             <h1>Dark Kitchen</h1>
             
@@ -156,9 +152,13 @@
                 </div>
             </div>
         </div>
-        
+
+        <div class="darkMode">
+            <button onclick="darkMode()">Darkmode</button>
+          </div>
         
 </footer>
+    
     
     <script src="https://kit.fontawesome.com/97bceb2613.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./app.js"></script>

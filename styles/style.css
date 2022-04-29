@@ -1,6 +1,6 @@
 /* WHOLE PAGE BEHAVIOR */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,300&display=swap');
 
 :root {
     --Black: hsl(0, 0%, 0%);
@@ -20,6 +20,7 @@
 body {
     background-color: var(--White);
     width: 100%;
+    font-family: 'Poppins';
 }
 
 html{
@@ -77,6 +78,30 @@ nav ul li:nth-child(2) {
     font-weight: bold;
     margin-left: -100px;
 }
+
+.location{color: white;
+}
+
+.cart{
+    width: 20%;
+    height: 100%;
+    /* border: 1px solid black; */
+    display:block;
+    
+}
+
+.cart-icon{
+
+    text-align: right;
+    color: white;
+}
+
+/* .overlay-cart{
+
+  background-color: #fff;
+  width: 100%;
+  height: 3em;
+} */
 
 /* IL FAUT REPARER LE PANIER POUR AVOIR UNE POSITION FIXED
 
@@ -152,6 +177,8 @@ label{
 }
 
 .top-category{
+    width: 100%;
+    height: 10rem;
     display: flex;
     justify-content:center;
     align-items: center;
@@ -163,7 +190,10 @@ label{
 
 .wrapper-topCat{
     width: 95%;
-    height: 200px;
+    height: 100%;
+    background: #FFF;
+    border: none;
+    border-radius:10px;
     display: flex;
     justify-content:space-between;
     align-items:center;
@@ -186,6 +216,7 @@ label{
 
 
 .item-container{
+    height: 70%;
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -195,8 +226,8 @@ label{
 }
 
 .item{
-    width: 323px;
-    height: 160px;
+    width: 50%;
+    height: 100%;
     border: 1px solid #000;
     display: flex;
     justify-content:center;
@@ -238,6 +269,7 @@ label{
     width: 700px;
     height: 350px;
     border: 2px solid #000;
+    /* background-image: url(https://images.unsplash.com/photo-1569718212165-3a8278d5f624?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -265,7 +297,7 @@ label{
   footer {
       background: #000;
       width: 100%;
-      height: 560px;
+      height: 100%;
       color: var(--White);
       padding: 16px 35px 11px 35px;
   }
@@ -350,6 +382,11 @@ hr{
 
 }
 
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
+
 
 /* RESPONSIVE (IPHONE 11 PRO / X) */
 
@@ -420,7 +457,6 @@ hr{
     .top-title {
         margin-top: 15px;
         margin-left: 20px;
-        ma
         font-size: 12px;
     }
 
